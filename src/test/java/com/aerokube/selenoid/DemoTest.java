@@ -37,10 +37,9 @@ public class DemoTest {
 
     }
 
-    private void takeScreenshot(WebDriver driver) throws Exception {
+    static void takeScreenshot(RemoteWebDriver driver) throws Exception {
         byte[] screen = ((TakesScreenshot) new Augmenter().augment(driver)).getScreenshotAs(OutputType.BYTES);
-        UUID uuid = UUID.randomUUID();
-        FileUtils.writeByteArrayToFile(new File(uuid.toString() + ".png"), screen);
+        FileUtils.writeByteArrayToFile(new File(driver.getSessionId() + ".png"), screen);
     }
 
     @After
