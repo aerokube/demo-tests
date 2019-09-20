@@ -19,6 +19,9 @@ public class DemoTest {
     @Before
     public void openDriver() throws Exception {
         final DesiredCapabilities browser = DesiredCapabilities.chrome();
+//        browser.setCapability("enableVideo", true);
+//        browser.setCapability("enableLog", true);
+//        browser.setCapability("enableVNC", true);
         driver = new RemoteWebDriver(new URL(
                 "http://selenoid.example.com:4444/wd/hub" //Replace with correct host and port
         ), browser);
