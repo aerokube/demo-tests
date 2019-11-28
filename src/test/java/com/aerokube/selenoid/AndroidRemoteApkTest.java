@@ -22,7 +22,7 @@ public class AndroidRemoteApkTest {
         final DesiredCapabilities device = new DesiredCapabilities();
         device.setCapability("browserName", "android");
         device.setCapability("version", "7.1");
-        device.setCapability("app", "http://ci.example.com/game2048.apk"); //APK from https://www.apkmirror.com/apk/androbaby/2048/
+        device.setCapability("app", "http://ci.example.com/game2048.apk"); //APK from https://www.apkmirror.com/apk/androbaby/2048/2048-2-1-release/2048-2-1-android-apk-download/download/
         device.setCapability("appPackage", "com.androbaby.game2048");
         device.setCapability("appActivity", "com.androbaby.game2048.MainActivity");
         device.setCapability("enableVNC", true);
