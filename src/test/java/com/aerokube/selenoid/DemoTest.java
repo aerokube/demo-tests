@@ -30,7 +30,7 @@ public class DemoTest {
     @Test
     public void browserTest() throws Exception {
         try {
-            driver.get("http://duckduckgo.com/");
+            driver.get("https://duckduckgo.com/");
             WebElement input = driver.findElement(By.cssSelector("input#search_form_input_homepage"));
             input.sendKeys(Keys.chord("selenium", Keys.ENTER));
         } finally {
