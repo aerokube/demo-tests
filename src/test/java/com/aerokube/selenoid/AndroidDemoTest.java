@@ -26,7 +26,7 @@ public class AndroidDemoTest {
     @Before
     public void openDriver() throws Exception {
         final DesiredCapabilities device = new DesiredCapabilities();
-        device.setCapability("browserName", "android");
+        device.setCapability("deviceName", "android");
         device.setCapability("version", "6.0");
 //        device.setCapability("app", "http://download.example.com/test.apk"); // Uncomment this to download your own APK
         device.setCapability("appPackage", "com.android.calculator2"); // Set this to your APK package

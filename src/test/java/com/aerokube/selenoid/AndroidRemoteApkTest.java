@@ -20,7 +20,7 @@ public class AndroidRemoteApkTest {
     @Before
     public void openDriver() throws Exception {
         final DesiredCapabilities device = new DesiredCapabilities();
-        device.setCapability("browserName", "android");
+        device.setCapability("deviceName", "android");
         device.setCapability("version", "7.1");
         device.setCapability("app", "http://ci.example.com/game2048.apk"); //APK from https://www.apkmirror.com/apk/androbaby/2048/
         device.setCapability("appPackage", "com.androbaby.game2048");
