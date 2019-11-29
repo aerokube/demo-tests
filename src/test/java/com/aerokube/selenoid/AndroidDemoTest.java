@@ -9,7 +9,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.URL;
 
-import static com.aerokube.selenoid.DemoTest.takeScreenshot;
+import static com.aerokube.selenoid.Screenshot.takeScreenshot;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 

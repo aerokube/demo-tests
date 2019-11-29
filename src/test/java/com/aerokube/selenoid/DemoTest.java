@@ -39,11 +39,6 @@ public class DemoTest {
 
     }
 
-    static void takeScreenshot(RemoteWebDriver driver) throws Exception {
-        byte[] screen = ((TakesScreenshot) new Augmenter().augment(driver)).getScreenshotAs(OutputType.BYTES);
-        FileUtils.writeByteArrayToFile(new File(driver.getSessionId() + ".png"), screen);
-    }
-
     @After
     public void closeDriver(){
         if (driver != null){
