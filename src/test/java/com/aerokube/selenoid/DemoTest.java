@@ -12,6 +12,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.io.File;
 import java.net.URL;
 
+import static com.aerokube.selenoid.Screenshot.takeScreenshot;
+
 public class DemoTest {
 
     private RemoteWebDriver driver;
