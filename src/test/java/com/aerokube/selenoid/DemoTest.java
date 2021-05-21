@@ -18,7 +18,9 @@ public class DemoTest {
 
     @Before
     public void openDriver() throws Exception {
+//        proxy.setSslProxy("http://you-proxy-server:3128"); //If you use proxy server for SSL conection
         final DesiredCapabilities browser = DesiredCapabilities.chrome();
+//        browser.setCapability("proxy", proxy); //If you use proxy server
 //        browser.setCapability("enableVideo", true);
 //        browser.setCapability("enableLog", true);
 //        browser.setCapability("enableVNC", true);
